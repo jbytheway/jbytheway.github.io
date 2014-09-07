@@ -1,5 +1,6 @@
 ---
 layout: post
+commentIssueId: 1
 title: "Metablogging: Poole and Pingbacks"
 ---
 
