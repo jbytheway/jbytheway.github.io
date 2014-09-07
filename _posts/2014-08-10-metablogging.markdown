@@ -1,7 +1,7 @@
 ---
 layout: post
-commentIssueId: 1
 title: "Metablogging: Poole and Pingbacks"
+commentIssueId: 1
 ---
 
 I have spent the last few months without ready access to my desktop PC.  I'm
