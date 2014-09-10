@@ -2,6 +2,7 @@
 layout: post
 title: "Metablogging: Poole and Pingbacks"
 commentIssueId: 1
+tags: blog
 ---
 
 I have spent the last few months without ready access to my desktop PC.  I'm
