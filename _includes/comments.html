@@ -41,9 +41,7 @@
       $.ajax("https://api.github.com/repos/jbytheway/jbytheway.github.io/issues/{{page.commentIssueId}}/comments?per_page=100", {
         headers: {Accept: "application/vnd.github.v3.full+json"},
         dataType: 'json',
-        success: function(msg){
-          loadComments(msg);
-        },
+        success: loadComments,
         error: function(xhr, status, error){
           $("#comments").append("Oops.  Loading comments failed.");
         }
