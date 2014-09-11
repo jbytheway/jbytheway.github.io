@@ -9,7 +9,6 @@ permalink:        pretty
 title:            Incidentally
 tagline:          Adventures in computing and life
 url:              https://jbytheway.github.io
-paginate:         1
 baseurl:          /
 author:
   name:           John Bytheway

@@ -1,0 +1,15 @@
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+ul.posts li div span {
+  color: grey;
+  font-size: 80%;
+}
+ul.posts li .first {
+  width: 5em;
+  display: inline-block;
+}
+ul.posts li .second {
+  display: inline-block;
+}
