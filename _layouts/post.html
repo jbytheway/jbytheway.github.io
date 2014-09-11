@@ -6,7 +6,7 @@ layout: default
 
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date: "%F" }}</time>
   {{ content }}
 </article>
 
@@ -19,7 +19,7 @@ layout: default
           <a href="{{ post.url }}">
             {{ post.title }}
             <small><time datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date_to_string }}
+              {{ post.date | date: "%F" }}
             </time></small>
           </a>
         </li>
