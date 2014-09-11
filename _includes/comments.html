@@ -37,10 +37,30 @@
       }
     }
 
+    var entityMap = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': '&quot;',
+      "'": '&#39;',
+      "/": '&#x2F;'
+    };
+
+    function escapeHtml(string) {
+      return String(string).replace(/[&<>"'\/]/g, function (s) {
+        return entityMap[s];
+      });
+    }
+
     $.ajax("https://api.github.com/repos/jbytheway/jbytheway.github.io/issues/{{page.commentIssueId}}/comments?per_page=100", {
       headers: {Accept: "application/vnd.github.v3.full+json"},
+      dataType: 'json',
       success: function(msg){
         loadComments(msg);
+      },
+      error: function(xhr, status, error){
+        $("#comments").append("Loading comments failed.  status=" +
+          escapeHtml(status) + ", error=" + escapeHtml(error));
       }
     });
   </script>
