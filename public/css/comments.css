@@ -11,10 +11,16 @@
 .comment .commentheader .commentuser {
   font-size: 80%;
   font-weight: bold;
-  margin-left: 0.5em;
+  margin-left: 0.4rem;
   margin-right: 1em;
 }
 .comment .commentheader .commentdate {
   font-size: 60%;
+}
+.comment .commentbody {
+  /* Margin for the gravatar and padding for comment-user.margin-left; this
+   * should ensure that the body lines up with the username. */
+  margin-left: 20px;
+  padding-left: 0.4rem;
 }
 
