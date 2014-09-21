@@ -6,7 +6,7 @@ tags: blog
 ---
 
 Disclaimer: This post is another self-referential post about creating this
-blog.
+blog, and is probably only of interest to people using Jekyll.
 
 As discussed [last time](/2014/08/10/metablogging), I was pondering how best to
 add comments to this blog.
